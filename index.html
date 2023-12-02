@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"
+      rel="stylesheet">
+    <!-- bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="img-section ">
+        <img src="./assets/images/background-pattern-desktop.svg" width="100%" height="100%" alt="">
+      </div>
+      <div class="whit">
+
+      </div>
+    </div>
+    <div class="containe">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-1">
+            <img src="./assets/images/icon-star.svg" alt="">
+          </div>
+          <div class="col-11">
+            <h1>FAQS</h1>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="false" aria-controls="collapseOne">
+                <p class=" fw-bold ls-widest">WHat is FrontEnd Mentor, and how will it help me?</p>
+
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Front End Mentors offer realistic coding challenges to help
+                developers improve their front end coding skills with project in HTML,CSS, and JavaScript.
+                it's suitable for all levels and ideal for portfolio building
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <p class="fw-bold text">Can I use Frontend Mentor project in my portfolio?</p>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugit unde odit hic nulla praesentium,
+                  est molestias sapiente iusto expedita dolor iste tempora maiores officiis quod assumenda earum, odio
+                  nostrum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <p class="fw-bold text">How can I get help if I'am stuck on challenge?</p>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt doloribus consectetur deleniti aut
+                  quisquam iure laudantium doloremque amet praesentium distinctio vitae, quod assumenda ullam adipisci
+                  itaque. Culpa voluptate mollitia reprehenderit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row mt-3">
+          <div class="col-11">
+            <p class="fs-5 fw-bold ls-widest">WHat is FrontEnd Mentor, and how will it help me?</p>
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/icon-minus.svg" alt="">
+          </div>
+        </div>
+        <div class="row mt-3 " id="demo">
+          <div class="col">
+            <p class="">Front End Mentors offer realistic coding challenges to help
+              developers improve their front end coding skills with project in HTML,CSS, and JavaScript.
+              it's suitable for all levels and ideal for portfolio building
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-11">
+            <p class="fw-bold text">Is Frontend Mentor Free?</p>
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/icon-plus.svg" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-11">
+            <p class="fw-bold text">Can I use Frontend Mentor project in my portfolio?</p>
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/icon-plus.svg" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-11">
+            <p class="fw-bold text">How can I get help if I'am stuck on challenge?</p>
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/icon-plus.svg" alt="">
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- 
+    FAQs
+
+    What is Frontend Mentor, and how will it help me?
+
+    Frontend Mentor offers realistic coding challenges to help developers improve their
+    frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+    all levels and ideal for portfolio building.
+
+    Is Frontend Mentor free?
+
+    Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+    option providing access to a range of projects suitable for all skill levels.
+
+    Can I use Frontend Mentor projects in my portfolio?
+
+    Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+    way to showcase your skills to potential employers!
+
+    How can I get help if I'm stuck on a Frontend Mentor challenge?
+
+    The best place to get help is inside Frontend Mentor's Discord community. There's a help
+    channel where you can ask questions and seek support from other community members.
+ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
